@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #0f172a;
+    color: white
+}
+
+
+nav {
+    width: 100%;
+    padding: 1.2rem 5%;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    margin-bottom: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-name {
+    font-size: 2.4rem;
+    font-weight: 900;       // bold it
+    letter-spacing: 1px;
+    text-shadow: 2px 2px #487bff;
+    -webkit-text-stroke: 0.1rem black;
+
+    color: #38bdf8;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;          // make them all be in the same line
+    gap: 2rem
+}
+
+.nav-links li a {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;  // remove underline
+    color: #e2ebf0;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    background: linear-gradient(to right,
+        #fc72ff, #8f68ff, #487bff,
+        #8f68ff, #fc72ff
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 4s linear infinite;
+}
+
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
+}
