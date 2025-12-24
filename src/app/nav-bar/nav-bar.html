@@ -1,6 +1,11 @@
 <nav>
     <div class="nav-name">Chavit Saritdeechaikul</div>
-    <ul class="nav-links">
+    <div class="collapse-menu" (click)="menuOnClick()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul class="nav-links" [style.display]="screenWidth > widthBeforeShrink ? 'flex' : (isMenuOpen ? 'block' : 'none')">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Projects</a></li>
