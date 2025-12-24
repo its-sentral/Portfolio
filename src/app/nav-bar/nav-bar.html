@@ -6,13 +6,30 @@
         <div class="bar"></div>
     </div>
     <ul class="nav-links" [style.display]="screenWidth > widthBeforeShrink ? 'flex' : (isMenuOpen ? 'block' : 'none')">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li>
+            <a href="#"
+            (click)="setToggle('Home')"
+            [class.active]="toggleOn === 'Home'">Home</a>
+        </li>
+
+        <li>
+            <a href="#"
+            (click)="setToggle('About')"
+            [class.active]="toggleOn === 'About'">About</a>
+        </li>
+
+        <li>
+            <a href="#"
+            (click)="setToggle('Projects')"
+            [class.active]="toggleOn === 'Projects'">Projects</a>
+        </li>
+
+        <li>
+            <a href="#"
+            (click)="setToggle('Contact')"
+            [class.active]="toggleOn === 'Contact'">Contact</a>
+        </li>
     </ul>
-
-
 
 </nav>
 
