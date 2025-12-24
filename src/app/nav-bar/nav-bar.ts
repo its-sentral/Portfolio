@@ -11,7 +11,11 @@ export class NavBar {
   isMenuOpen: boolean = false;
   screenWidth: number = window.innerWidth;
   widthBeforeShrink: number = 1000
+  toggleOn: string = "Home"
 
+  setToggle(name: string) {
+    this.toggleOn = name
+  }
 
   menuOnClick() {
     if (window.innerWidth < this.widthBeforeShrink) {
@@ -20,7 +24,6 @@ export class NavBar {
   }
 
 
-  // Update screenWidth whenever window is resized
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.screenWidth = event.target.innerWidth;
