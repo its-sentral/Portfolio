@@ -15,9 +15,12 @@ import { FgItem } from './fg-item/fg-item';
 export class App {
   protected readonly title = signal('test');
   screenWidth: number = window.innerWidth;
+  widthBeforeShrink: number = 1280;
+  shrink: boolean = this.screenWidth > this.widthBeforeShrink;
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.screenWidth = event.target.innerWidth;
+    this.shrink = this.screenWidth > this.widthBeforeShrink;
   }
 }
