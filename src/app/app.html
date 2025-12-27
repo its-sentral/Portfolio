@@ -10,24 +10,30 @@
 
         <app-fg-item>
             <!-- fg content -->
-            <div [style.display]="screenWidth > 1260? 'flex' : 'block'">
+            <div [style.display]="shrink? 'flex' : 'block'">
                 <div class="box-area"
-                    [style.width]="screenWidth > 1260? '54vw' : '100vw'"
-                    [style.padding]="screenWidth > 1260? '0 10%': '0 0'"
-                    [style.justify-content]="screenWidth > 1260? 'right':'center'"
-                    [style.height]="screenWidth > 1260? '46rem':'10rem'"
+                    [style.width]="shrink? '54vw' : '100vw'"
+                    [style.padding]="shrink? '0 10%': '0 0'"
+                    [style.justify-content]="shrink? 'right':'center'"
+                    [style.height]="shrink? '46rem':'10rem'"
                     >
 
                     <div class="large-text">
-                        <h1>Name == "Chavit"</h1>
-                        <p style="margin-top: 0.2rem;">Software Engineering: Full - Stack developer</p>
+                        <div style="display: flex;">
+                            <h1>{{screenWidth > 512? 'Name == "Chavit"': 'Chavit'}}</h1>
+                        </div>
+                        
+                        <div style="margin-top: 0.2rem;">
+                            <p>Department: Software Engineering</p>
+                            <p class="medium-text">Full-Stack developer</p>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="img-container"
-                [style.width]="screenWidth > 1260? '34vw' : '50vw'"
-                [style.height]="screenWidth > 1260? '34rem' : '50vw'"
-                [style.margin]="screenWidth > 1260? '6rem 0' : '2rem auto'"
+                [style.width]="shrink? '34vw' : '50vw'"
+                [style.height]="shrink? '34rem' : '50vw'"
+                [style.margin]="shrink? '6rem 0' : '2rem auto'"
                 >
                     <img src="">
                 </div>
