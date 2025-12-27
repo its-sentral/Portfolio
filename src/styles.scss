@@ -6,115 +6,57 @@
 }
 
 
+
 body {
     font-family: "Poppins", sans-serif;
     background: #0f172a;
-    color: white
+    color: white;
+    overflow-x: hidden;
 }
 
 
-nav {
-    position: sticky;
-    width: 100%;
-    padding: 1.2rem 5%;
-    background: rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    margin-bottom: 2rem;
+.app-content-block {
+    position: relative;
+}
+
+.large-text {
+    font-size: 1.6rem;
+}
+
+.medium-text {
+    font-size: 1.1rem;
+}
+
+.small-text {
+    font-size: 0.6rem;
+}
+
+.main-container {
+    position: relative;
+}
+
+.box-area {
+    display: flex;
+    align-items: center;     /* horizontal */
+
+}
+
+
+.img-container {
+    border-radius: 50px;
+    overflow: hidden;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    background-color: #e5e7eb;
+    min-width: 420px;
+    min-height: 420px;
 }
 
-.nav-name {
-    font-size: 2.4rem;
-    font-weight: 900;       // bold it
-    letter-spacing: 1px;
-    text-shadow: 2px 2px #487bff;
-    -webkit-text-stroke: 0.1rem black;
-
-    color: #38bdf8;
-}
-
-
-.nav-links {
-    list-style: none;
-    display: flex;          // make them all be in the same line
-    gap: 2rem
-}
-
-.nav-links li a {
-    position: relative;
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-decoration: none;  // remove underline
-    color: #e2ebf0;
-    transition: 0.3s;
-}
-
-.nav-links li a:hover,
-.nav-links li a.active {
-    background: linear-gradient(to right,
-        #fc72ff, #8f68ff, #487bff,
-        #8f68ff, #fc72ff
-    );
-    background-size: 200%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animate-gradient 4s linear infinite;
-}
-
-@keyframes animate-gradient {
-    to {
-        background-position: 200%;
-    }
-}
-
-
-.collapse-menu {
-    display: none;
-    cursor: pointer;
-    width: 2.5rem;
-}
-
-.collapse-menu .bar {
-    flex-basis: 100%;
-    height: 0.2rem;
-    background-color: white;
-    margin: 0.2rem;
-}
-
-
-// handle Responsive Design
-@media (max-width: 1000px) {
-
-    nav {
-        flex-wrap: wrap;
-    }
-
-    .collapse-menu {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .nav-links{
-        display: none;
-        flex-basis: 100%;
-        flex-wrap: wrap;
-        margin-bottom: 0;
-        margin-top: 2rem;
-        border: 0.2rem solid #1b2847;
-        background-color: #1b2847;
-    }
-
-    .nav-links li {
-        text-align: center;
-        font-size: 1.6rem;
-        margin: 1.6rem;
-    }
-
-    
-
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* fill container without distortion */
 }

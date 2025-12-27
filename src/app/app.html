@@ -1,3 +1,47 @@
 <body>
     <app-nav-bar></app-nav-bar>
+    
+    <div id="#Home" class="main-container" style="height: 46rem; width: 100%;">
+        <app-bg-item>
+            <!-- bg content -->
+            <img src="https://wallpaperaccess.com/full/796863.jpg" alt="Background" style="width: 100vw; height: 46rem;">
+            
+        </app-bg-item>
+
+        <app-fg-item>
+            <!-- fg content -->
+            <div [style.display]="screenWidth > 1260? 'flex' : 'block'">
+                <div class="box-area"
+                    [style.width]="screenWidth > 1260? '54vw' : '100vw'"
+                    [style.padding]="screenWidth > 1260? '0 10%': '0 0'"
+                    [style.justify-content]="screenWidth > 1260? 'right':'center'"
+                    [style.height]="screenWidth > 1260? '46rem':'10rem'"
+                    >
+
+                    <div class="large-text">
+                        <h1>Name == "Chavit"</h1>
+                        <p style="margin-top: 0.2rem;">Software Engineering: Full - Stack developer</p>
+                    </div>
+                </div>
+                
+                <div class="img-container"
+                [style.width]="screenWidth > 1260? '34vw' : '50vw'"
+                [style.height]="screenWidth > 1260? '34rem' : '50vw'"
+                [style.margin]="screenWidth > 1260? '6rem 0' : '2rem auto'"
+                >
+                    <img src="">
+                </div>
+            </div>
+            
+            
+        </app-fg-item>
+            
+    </div>
+
+
+
+    
+    <div>
+
+    </div>
 </body>
