@@ -1,139 +1,138 @@
-<body>
-    <app-nav-bar></app-nav-bar>
-    
-    <div id="Home" class="main-container" style="height: 64rem; width: 100%;">
-        <app-bg-item>
-            <!-- bg content -->
-            <div style="height: 6rem;"></div>
-            <div class="image-fade">
-                <img src="https://wallpaperaccess.com/full/796863.jpg" alt="Background" style="width: 100vw; height: 50rem; 
-                border-bottom-left-radius: 30%; border-bottom-right-radius: 30%;
-                ">
-            </div>
-            
-            
-        </app-bg-item>
 
-        <app-fg-item>
-            <!-- fg content -->
-            <div style="height: 6rem;"></div>
-            <div [style.display]="shrink? 'flex' : 'block'">
-                <div class="box-area"
-                    [style.width]="shrink? '54vw' : '100vw'"
-                    [style.padding]="shrink? '0 10%': '0 0'"
-                    [style.justify-content]="shrink? 'right':'center'"
-                    [style.height]="shrink? '46rem':'10rem'"
-                    >
+<app-nav-bar></app-nav-bar>
 
-                    <div class="large-text">
-                        <div style="display: flex;">
-                            <h1>{{screenWidth > 512? 'Name == "Chavit"': 'Chavit'}}</h1>
-                        </div>
-                        
-                        <div style="margin-top: 0.2rem;">
-                            <p>Department: Software Engineering</p>
-                            <p class="medium-text">Full-Stack developer</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="img-container"
-                [style.width]="shrink? '34vw' : '50vw'"
-                [style.height]="shrink? '34rem' : '50vw'"
-                [style.margin]="shrink? '6rem 0' : '2rem auto'"
+<div id="Home" class="main-container" style="height: 64rem; width: 100%;">
+    <app-bg-item>
+        <!-- bg content -->
+        <div style="height: 6rem;"></div>
+        <div class="image-fade">
+            <img src="https://wallpaperaccess.com/full/796863.jpg" alt="Background" style="width: 100vw; height: 50rem; 
+            border-bottom-left-radius: 30%; border-bottom-right-radius: 30%;
+            ">
+        </div>
+        
+        
+    </app-bg-item>
+
+    <app-fg-item>
+        <!-- fg content -->
+        <div style="height: 6rem;"></div>
+        <div [style.display]="shrink? 'flex' : 'block'">
+            <div class="box-area"
+                [style.width]="shrink? '54vw' : '100vw'"
+                [style.padding]="shrink? '0 10%': '0 0'"
+                [style.justify-content]="shrink? 'right':'center'"
+                [style.height]="shrink? '46rem':'10rem'"
                 >
-                    <img src="">
-                </div>
-            </div>
-            
-            
-        </app-fg-item>
-            
-    </div>
 
-
-
-    
-    <div id="About" class="main-container" style="width: 100vw;"
-        [style.padding]="'0 10vw'"    
-    >
-        <app-bg-item></app-bg-item>
-
-
-        <app-fg-item>
-            <!-- About Me -->
-            <div class="content-box" style="border-color: #173f9f; background-color: #1b2847; margin-left: 23vw; width: 54vw;">
-                <h1 class="scaled-text-large" style="padding-bottom: 1rem;">About Me</h1>
-                <div class="scrollable scroll-y" style="max-width: 54vw; max-height: 8vw;">
-                    <p class="large-text scaled-text">
-                        I am a 2nd-year Software Engineering student seeking a Full-Stack developer position,
-                        with hands-on experience building responsive web applications using Angular and React,
-                        and developing backend services with Spring Boot, Fast API, and Node.js.
-                        I have practical experience working with RESTful APIs, SQL databases, and collaborative projects,
-                        and I enjoy designing user-friendly interfaces while ensuring efficient system integration.
-                    </p>
-                </div>
-            </div>
-
-
-            <!-- Education -->
-            <div class="content-box" style="border-color: #173f9f; background-color: #1b2847; width: 60vw;">
-                <h1 class="scaled-text-large" style="padding-bottom: 1rem;">Secondary Education</h1>
-                <div class="scrollable scroll-all" style="max-width: 60vw; max-height: 15vw;">
-                    <ul>
-                        <li>
-                            <h3 class="scaled-text" style="margin-bottom: 1vw;">Lower Secondary School:</h3>
-                            <div class="scaled-text" style="margin-bottom: 1rem;">
-                                <div style="display: flex; align-items: center; gap: 0.8vw;">
-                                    <img src="http://www.tup.ac.th/images/main/logo-new17may.png" style="width: 3vw; height: 3vw;">
-                                    <div>
-                                        <p  class="scaled-text-small">Triam Udom Suksa Pattanakarn School (2018-2020)</p>
-                                        <p class="scaled-text-small">Science and Math (Gifted Program) | GPA: 3.53 / 4.00</p>
-                                    </div>
-                                    
-                                </div>
-                                
-                                
-                            </div>
-                        </li>
-                        <li>
-                            <h3 class="scaled-text" style="margin-bottom: 1rem;">Upper Secondary School:</h3>
-                            <div class="scaled-text" style="margin-bottom: 1rem;">
-                                <div style="display: flex; align-items: center; gap: 0.8vw;">
-                                    <img src="https://lh3.googleusercontent.com/sitesv/AAzXCkeUj9IL6n8caOH7qCVOamww7q7SOuF4txofEdY-9ITDwZ3hPGkwDX_ArMQo5tXCCpthUlTJvWXt326hRept0Q4G8hIKx6yir8e_p61jB9GG6fFN_s8Nt4X6loCSS59IbzOLMmrPH4_ikPQ_uGQtlBOd4rQJnZXR6XFf5DbW4NmkXh0Td5CP7JJFHv0=w16383" style="width: 3vw; height: 3vw;">
-                                    <div>
-                                        <p  class="scaled-text-small">Suan Kularb Wittayalai Rangsit School (2021-2023)</p>
-                                        <p class="scaled-text-small">SCIUS-TU Program | GPA: 3.61 / 4.00</p>
-                                    </div>
-                                    
-                                </div>
-                                
-                                
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-
-            <!-- Contact -->
-             <div class="content-box" style="border-color: #173f9f; background-color: #1b2847; margin-left: 20vw; width: 57vw;">
-                <h1 class="scaled-text-large" style="padding-bottom: 1rem;">University</h1>
-                <div class="scrollable scroll-all" style="max-width: 60vw; max-height: 15vw;">
-                    <div style="display: flex; align-items: center; gap: 0.8vw;">
-                        <img src="https://www.kmitl.ac.th/themes/custom/kmitl/logo.svg"
-                        style="width: 5vw; height: 5vw; border-radius: 50%;">
-                        <div>
-                            <p class="scaled-text-small">King Mongkut's Institute of Technology Ladkrabang</p>
-                            <p class="scaled-text-small">Bachelor's in Software Engineering | GPA: 3.61 / 4.0</p>
-                        </div>
+                <div class="large-text">
+                    <div style="display: flex;">
+                        <h1>{{screenWidth > 512? 'Name == "Chavit"': 'Chavit'}}</h1>
+                    </div>
+                    
+                    <div style="margin-top: 0.2rem;">
+                        <p>{{screenWidth > 512? "Department: Software Engineering" : "Software Engineering"}}</p>
+                        <p>Full-Stack developer</p>
                     </div>
                 </div>
-             </div>
+            </div>
+            
+            <div class="img-container"
+            [style.width]="shrink? '34vw' : '50vw'"
+            [style.height]="shrink? '34rem' : '50vw'"
+            [style.margin]="shrink? '6rem 0' : '2rem auto'"
+            >
+                <img src="">
+            </div>
+        </div>
+        
+        
+    </app-fg-item>
+        
+</div>
 
 
 
-            <div style="height: 6rem;"></div>
-        </app-fg-item>
-    </div>
-</body>
+
+<div id="About" class="main-container" style="width: 100vw; padding: 0 10vw;" 
+>
+    <app-bg-item></app-bg-item>
+
+
+    <app-fg-item>
+        <!-- About Me -->
+        <div class="content-box" style="border-color: #173f9f; background-color: #1b2847; margin-left: 23vw; width: 54vw;">
+            <h1 class="scaled-text-large" style="padding-bottom: 1rem;">About Me</h1>
+            <div class="scrollable scroll-y" style="max-width: 54vw; max-height: 12vw;">
+                <p class="large-text scaled-text">
+                    I am a 2nd-year Software Engineering student seeking a Full-Stack developer position,
+                    with hands-on experience building responsive web applications using Angular and React,
+                    and developing backend services with Spring Boot, Fast API, and Node.js.
+                    I have practical experience working with RESTful APIs, SQL databases, and collaborative projects,
+                    and I enjoy designing user-friendly interfaces while ensuring efficient system integration.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- Education -->
+        <div class="content-box" style="border-color: #173f9f; background-color: #1b2847; width: 60vw;">
+            <h1 class="scaled-text-large" style="padding-bottom: 1rem;">Secondary Education</h1>
+            <div class="scrollable scroll-all" style="max-width: 60vw; max-height: 15vw;">
+                <ul>
+                    <li>
+                        <h3 class="scaled-text" style="margin-bottom: 1vw;">Lower Secondary School:</h3>
+                        <div class="scaled-text" style="margin-bottom: 1rem;">
+                            <div style="display: flex; align-items: center; gap: 0.8vw;">
+                                <img src="http://www.tup.ac.th/images/main/logo-new17may.png" style="width: 3vw; height: 3vw;">
+                                <div>
+                                    <p  class="scaled-text-small">Triam Udom Suksa Pattanakarn School (2018-2020)</p>
+                                    <p class="scaled-text-small">Science and Math (Gifted Program) | GPA: 3.53 / 4.00</p>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <h3 class="scaled-text" style="margin-bottom: 1rem;">Upper Secondary School:</h3>
+                        <div class="scaled-text" style="margin-bottom: 1rem;">
+                            <div style="display: flex; align-items: center; gap: 0.8vw;">
+                                <img src="https://lh3.googleusercontent.com/sitesv/AAzXCkeUj9IL6n8caOH7qCVOamww7q7SOuF4txofEdY-9ITDwZ3hPGkwDX_ArMQo5tXCCpthUlTJvWXt326hRept0Q4G8hIKx6yir8e_p61jB9GG6fFN_s8Nt4X6loCSS59IbzOLMmrPH4_ikPQ_uGQtlBOd4rQJnZXR6XFf5DbW4NmkXh0Td5CP7JJFHv0=w16383" style="width: 3vw; height: 3vw;">
+                                <div>
+                                    <p  class="scaled-text-small">Suan Kularb Wittayalai Rangsit School (2021-2023)</p>
+                                    <p class="scaled-text-small">SCIUS-TU Program | GPA: 3.61 / 4.00</p>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Contact -->
+            <div class="content-box" style="border-color: #173f9f; background-color: #1b2847; margin-left: 20vw; width: 57vw;">
+            <h1 class="scaled-text-large" style="padding-bottom: 1rem;">University</h1>
+            <div class="scrollable scroll-all" style="max-width: 60vw; max-height: 15vw;">
+                <div style="display: flex; align-items: center; gap: 0.8vw;">
+                    <img src="https://www.kmitl.ac.th/themes/custom/kmitl/logo.svg"
+                    style="width: 5vw; height: 5vw; border-radius: 50%;">
+                    <div>
+                        <p class="scaled-text-small">King Mongkut's Institute of Technology Ladkrabang</p>
+                        <p class="scaled-text-small">Bachelor's in Software Engineering | GPA: 3.61 / 4.0</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+
+        <div style="height: 6rem;"></div>
+    </app-fg-item>
+</div>
+

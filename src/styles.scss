@@ -14,6 +14,7 @@ body {
     background: #0f172a;
     color: white;
     overflow-x: hidden;
+    
 }
 
 
@@ -37,15 +38,15 @@ body {
 }
 
 .scaled-text {
-    font-size: clamp(14px, 1.8vw, 32px);
+    font-size: clamp(12px, 1.8vw, 32px);
 }
 
 .scaled-text-large{
-    font-size: clamp(22px, 4vw, 60px);
+    font-size: clamp(20px, 4vw, 60px);
 }
 
 .scaled-text-small{
-    font-size: clamp(8px, 1.2vw, 20px);
+    font-size: clamp(7px, 1.2vw, 20px);
 }
 
 
@@ -70,8 +71,8 @@ body {
     justify-content: center;
 
     background-color: #e5e7eb;
-    min-width: 360px;
-    min-height: 360px;
+    min-width: 300px;
+    min-height: 300px;
 }
 
 .img-container img {
