@@ -38,15 +38,15 @@ body {
 }
 
 .scaled-text {
-    font-size: clamp(12px, 1.8vw, 32px);
+    font-size: clamp(12px, 1.8vw, 90px);
 }
 
 .scaled-text-large{
-    font-size: clamp(20px, 4vw, 60px);
+    font-size: clamp(20px, 4vw, 120px);
 }
 
 .scaled-text-small{
-    font-size: clamp(7px, 1.2vw, 20px);
+    font-size: clamp(7px, 1.2vw, 60px);
 }
 
 
@@ -107,20 +107,19 @@ body {
     border-radius: 30px;
     border: 10px solid yellow;
     margin-bottom: 10vh;
+    transition: 0.3s;
 }
 
-.content-box.left-curve {
-    padding-left: 10%;
-    border-top-left-radius: 30%;
-    border-bottom-left-radius: 30%;
+
+.content-box:hover {
+    transform: scale(1.05);
 }
 
-.content-box.right-curve {
-    padding-right: 10%;
-    border-top-right-radius: 30%;
-    border-bottom-right-radius: 30%;
+div .bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
 
 
 
@@ -152,7 +151,22 @@ body {
 
 // Fade
 
-.image-fade {
+.image-fade-top {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+
+  /* Apply a gradient mask */
+  -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-image: linear-gradient(to top, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
+.image-fade-bottom {
   position: relative;
   display: block;
   width: 100%;

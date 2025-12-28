@@ -5,7 +5,7 @@
     <app-bg-item>
         <!-- bg content -->
         <div style="height: 6rem;"></div>
-        <div class="image-fade">
+        <div class="image-fade-bottom">
             <img src="https://wallpaperaccess.com/full/796863.jpg" alt="Background" style="width: 100vw; height: 50rem; 
             border-bottom-left-radius: 30%; border-bottom-right-radius: 30%;
             ">
@@ -54,13 +54,11 @@
 
 
 
-<div id="About" class="main-container" style="width: 100vw; padding: 0 10vw;" 
->
-    <app-bg-item></app-bg-item>
-
+<div id="About" class="main-container" style="width: 100vw; padding: 0 10vw;" >
 
     <app-fg-item>
         <!-- About Me -->
+        <div style="height: 10rem"></div>
         <div class="content-box" style="border-color: #173f9f; background-color: #1b2847; margin-left: 23vw; width: 54vw;">
             <h1 class="scaled-text-large" style="padding-bottom: 1rem;">About Me</h1>
             <div class="scrollable scroll-y" style="max-width: 54vw; max-height: 12vw;">
@@ -76,7 +74,7 @@
 
 
         <!-- Education -->
-        <div class="content-box" style="border-color: #173f9f; background-color: #1b2847; width: 60vw;">
+        <div class="content-box" style="border-color: #d843d8; background-color: #ff7bff; width: 60vw;">
             <h1 class="scaled-text-large" style="padding-bottom: 1rem;">Secondary Education</h1>
             <div class="scrollable scroll-all" style="max-width: 60vw; max-height: 15vw;">
                 <ul>
@@ -115,8 +113,7 @@
         </div>
 
 
-        <!-- Contact -->
-            <div class="content-box" style="border-color: #173f9f; background-color: #1b2847; margin-left: 20vw; width: 57vw;">
+        <div class="content-box" style="border-color: #009dcd; background-color: #4ec9d9; margin-left: 20vw; width: 57vw;">
             <h1 class="scaled-text-large" style="padding-bottom: 1rem;">University</h1>
             <div class="scrollable scroll-all" style="max-width: 60vw; max-height: 15vw;">
                 <div style="display: flex; align-items: center; gap: 0.8vw;">
@@ -128,11 +125,68 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div id="Contact" style="height: 10vw;"></div>
+        <!-- Contact -->
+        <div class="content-box" style="border-color: #9d20c3; background-color: #d06eed; margin: 0 auto ; width: 60vw;">
+            <div style="margin: 0 auto; width: 100%; text-align: center;">
+                <h1 class="scaled-text-large">Contact</h1>
             </div>
+            
+            <div class="scrollable scroll-all" style="max-width: 60vw; max-height: 20vw; margin-top: 1rem;">
+                <!-- Phone / Line -->
+                <div style="display: flex; width: 100%; margin: 1rem 0;">
+                    <div style="display: flex; align-items: center; gap: 0.8vw; width:60%;">
+                        <img src="data:image/webp;base64,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"
+                        style="width: 3vw; height: 3vw; border-radius: 50%;">
+                        <p class="scaled-text">095-954-6922</p>
+                    </div>
+
+                    
+                    <div style="display: flex; align-items: center; gap: 0.8vw; width:40%;">
+                        <img src="https://th.bing.com/th?q=Line+Official+Icon&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-WW&cc=TH&setlang=en&adlt=strict&t=1&mw=247" 
+                        style="width: 3vw; height: 3vw; border-radius: 50%;">
+                        <p class="scaled-text">ID: Chavithai</p>
+                    </div>
+                </div>
+                
+                <!-- Gmail / Instagram -->
+                <div style="display: flex; width: 100%; margin: 1rem 0;">
+                    <div style="display: flex; align-items: center; gap: 0.8vw; width:60%;">
+                        <img src="https://th.bing.com/th/id/OIP.cuDSSWQJzedwe8oux-MaXwHaHa?w=182&h=182&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" 
+                        style="width: 3vw; height: 3vw; border-radius: 50%;">
+                        <p class="scaled-text">Chavit.sar20@gmail.com</p>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 0.8vw; width:40%;">
+                        <img src="https://th.bing.com/th/id/OIP.JCI8klaaA1w4LCtljpeJoAHaHa?w=177&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" 
+                        style="width: 3vw; height: 3vw; border-radius: 30%;">
+                        <p class="scaled-text">its_sentral</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
 
 
 
-        <div style="height: 6rem;"></div>
+        <div style="height: 12vw;"></div>
+        <div id="#Projects" class="content-box bg" style="border-color: #7d16dd; background-color: #ffffff; width: 80vw;
+            background-image: url();
+        ">
+            <p></p>
+        </div>
+
+
+
     </app-fg-item>
+
+    
 </div>
+
+
+
+
 
