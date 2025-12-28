@@ -1,22 +1,24 @@
 nav {
-    position: sticky;
+    position: fixed;
+    z-index: 9999;
+
     top: 0;
+    left: 0;
     width: 100%;
+    min-height: 6rem;
     padding: 1.2rem 5%;
     background: rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
+    background-color: #1b2847;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    z-index: 1000;
 }
 
 
 .nav-name {
-    font-size: 2.4rem;
+    font-size: clamp(33px, 3.6vw, 60px);
     font-weight: 900;       // bold it
     letter-spacing: 1px;
     text-shadow: 2px 2px #487bff;
@@ -94,7 +96,7 @@ nav {
         margin-bottom: 0;
         margin-top: 2rem;
         border: 0.2rem solid #1b2847;
-        background-color: #1b2847;
+        background-color: #2b4071;
     }
 
     .nav-links li {
